@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Luis\Desktop\tarea_dislog\tarea1\simulation\qsim
+vtarea1
+Z1 I7J9M1[dW<SFnDjkXTBDlY3
+Z2 V2HlgOXMBdO8[ShLh]lmEL2
+Z3 dC:\Users\Luis\Desktop\tarea_dislog\tarea1\simulation\qsim
+Z4 w1757448736
+Z5 8tarea1.vo
+Z6 Ftarea1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|tarea1.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 7ik8jhoPN[A?oan==WndT0
+!s85 0
+Z11 !s108 1757448738.444000
+Z12 !s107 tarea1.vo|
+!s101 -O0
+vtarea1_vlg_check_tst
+!i10b 1
+!s100 RHk?BoO1z`nbXECTzY=K`3
+I=z]iaMbaz^>iVhOZQ`=DK0
+Z13 VZfhTKGZ=0fA]:T@ON3Fk_2
+R3
+Z14 w1757448733
+Z15 8Waveform.vwf.vt
+Z16 FWaveform.vwf.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z17 !s108 1757448738.709000
+Z18 !s107 Waveform.vwf.vt|
+Z19 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+vtarea1_vlg_sample_tst
+!i10b 1
+!s100 =aUI5:[7RSFj>zSkaz84L1
+IfShMZYM9lj8ECcDBK4=^a1
+Z20 V]I7YEI5lJbOWFAEj3`nQg2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+vtarea1_vlg_vec_tst
+!i10b 1
+!s100 EFf2YikI=B?NXi7[0H6^L0
+Inc]f41=DEbU:45SOT6zjg2
+Z21 VbX04DJ0VVLYkeb1?UK?aI3
+R3
+R14
+R15
+R16
+Z22 L0 341
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9

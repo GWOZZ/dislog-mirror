@@ -1,0 +1,373 @@
+|tarea1
+LED9 <= SALIDA_LED:inst3.LED[3]
+SW[0] => COMPARA_BN:inst2.inAdiv0[2]
+SW[1] => COMPARA_BN:inst2.inAdiv1[0]
+SW[2] => COMPARA_BN:inst2.inAdiv1[1]
+SW[3] => COMPARA_BN:inst2.inAdiv1[2]
+SW[4] => COMPARA_BN:inst2.inAdiv2[0]
+SW[5] => COMPARA_BN:inst2.inAdiv2[1]
+SW[6] => COMPARA_BN:inst2.inAdiv2[2]
+SW[7] => COMPARA_BN:inst2.inAdiv3[0]
+SW[8] => COMPARA_BN:inst2.inAdiv3[1]
+SW[9] => COMPARA_BN:inst2.inAdiv3[2]
+LED8 <= SALIDA_LED:inst3.LED[2]
+LED7 <= SALIDA_LED:inst3.LED[1]
+LED6 <= SALIDA_LED:inst3.LED[0]
+LED3 <= SALIDA_LED:inst4.LED[3]
+LED2 <= SALIDA_LED:inst4.LED[2]
+LED1 <= SALIDA_LED:inst4.LED[1]
+LED0 <= SALIDA_LED:inst4.LED[0]
+
+
+|tarea1|SALIDA_LED:inst3
+LED[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= and12.DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= and11.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => and7.IN0
+SW[0] => and9.IN0
+SW[0] => and8.IN0
+SW[0] => and11.IN0
+SW[0] => inst3.IN2
+SW[0] => inst2.IN2
+SW[0] => inst1.IN2
+SW[0] => or1.IN0
+SW[1] => and7.IN1
+SW[1] => and10.IN0
+SW[1] => and8.IN1
+SW[1] => and11.IN1
+SW[1] => inst3.IN0
+SW[1] => inst2.IN0
+SW[1] => inst.IN2
+SW[1] => or1.IN3
+SW[2] => and7.IN2
+SW[2] => and9.IN1
+SW[2] => and10.IN1
+SW[2] => and11.IN2
+SW[2] => inst3.IN1
+SW[2] => inst1.IN0
+SW[2] => inst.IN0
+SW[2] => or1.IN1
+SW[3] => and9.IN2
+SW[3] => and10.IN2
+SW[3] => and8.IN2
+SW[3] => and11.IN3
+SW[3] => inst2.IN1
+SW[3] => inst1.IN1
+SW[3] => inst.IN1
+SW[3] => or1.IN2
+
+
+|tarea1|COMPARA_BN:inst2
+outCB[0] <= COMPARA_B1D:inst5.outCB
+outCB[1] <= COMPARA_B1D:inst.outCB
+outCB[2] <= COMPARA_B1D:inst3.outCB
+outCB[3] <= COMPARA_B1D:inst4.outCB
+inAdiv0[0] => COMPARA_B1D:inst5.inAdiv[0]
+inAdiv0[0] => COMPARA_N:inst2.inAdiv0[0]
+inAdiv0[1] => COMPARA_B1D:inst5.inAdiv[1]
+inAdiv0[1] => COMPARA_N:inst2.inAdiv0[1]
+inAdiv0[2] => COMPARA_B1D:inst5.inAdiv[2]
+inAdiv0[2] => COMPARA_N:inst2.inAdiv0[2]
+inClave1[0] => COMPARA_B1D:inst5.inClave1[0]
+inClave1[0] => COMPARA_B1D:inst3.inClave2[0]
+inClave1[0] => COMPARA_B1D:inst4.inClave2[0]
+inClave1[0] => COMPARA_N:inst2.inClave1[0]
+inClave1[1] => COMPARA_B1D:inst5.inClave1[1]
+inClave1[1] => COMPARA_B1D:inst3.inClave2[1]
+inClave1[1] => COMPARA_B1D:inst4.inClave2[1]
+inClave1[1] => COMPARA_N:inst2.inClave1[1]
+inClave1[2] => COMPARA_B1D:inst5.inClave1[2]
+inClave1[2] => COMPARA_B1D:inst3.inClave2[2]
+inClave1[2] => COMPARA_B1D:inst4.inClave2[2]
+inClave1[2] => COMPARA_N:inst2.inClave1[2]
+inClave2[0] => COMPARA_B1D:inst5.inClave2[0]
+inClave2[0] => COMPARA_B1D:inst.inClave2[0]
+inClave2[0] => COMPARA_B1D:inst4.inClave3[0]
+inClave2[0] => COMPARA_N:inst2.inClave2[0]
+inClave2[1] => COMPARA_B1D:inst5.inClave2[1]
+inClave2[1] => COMPARA_B1D:inst.inClave2[1]
+inClave2[1] => COMPARA_B1D:inst4.inClave3[1]
+inClave2[1] => COMPARA_N:inst2.inClave2[1]
+inClave2[2] => COMPARA_B1D:inst5.inClave2[2]
+inClave2[2] => COMPARA_B1D:inst.inClave2[2]
+inClave2[2] => COMPARA_B1D:inst4.inClave3[2]
+inClave2[2] => COMPARA_N:inst2.inClave2[2]
+inClave3[0] => COMPARA_B1D:inst5.inClave3[0]
+inClave3[0] => COMPARA_B1D:inst.inClave3[0]
+inClave3[0] => COMPARA_B1D:inst3.inClave3[0]
+inClave3[0] => COMPARA_N:inst2.inClave3[0]
+inClave3[1] => COMPARA_B1D:inst5.inClave3[1]
+inClave3[1] => COMPARA_B1D:inst.inClave3[1]
+inClave3[1] => COMPARA_B1D:inst3.inClave3[1]
+inClave3[1] => COMPARA_N:inst2.inClave3[1]
+inClave3[2] => COMPARA_B1D:inst5.inClave3[2]
+inClave3[2] => COMPARA_B1D:inst.inClave3[2]
+inClave3[2] => COMPARA_B1D:inst3.inClave3[2]
+inClave3[2] => COMPARA_N:inst2.inClave3[2]
+inAdiv1[0] => COMPARA_B1D:inst.inAdiv[0]
+inAdiv1[0] => COMPARA_N:inst2.inAdiv1[0]
+inAdiv1[1] => COMPARA_B1D:inst.inAdiv[1]
+inAdiv1[1] => COMPARA_N:inst2.inAdiv1[1]
+inAdiv1[2] => COMPARA_B1D:inst.inAdiv[2]
+inAdiv1[2] => COMPARA_N:inst2.inAdiv1[2]
+inClave0[0] => COMPARA_B1D:inst.inClave1[0]
+inClave0[0] => COMPARA_B1D:inst3.inClave1[0]
+inClave0[0] => COMPARA_B1D:inst4.inClave1[0]
+inClave0[0] => COMPARA_N:inst2.inClave0[0]
+inClave0[1] => COMPARA_B1D:inst.inClave1[1]
+inClave0[1] => COMPARA_B1D:inst3.inClave1[1]
+inClave0[1] => COMPARA_B1D:inst4.inClave1[1]
+inClave0[1] => COMPARA_N:inst2.inClave0[1]
+inClave0[2] => COMPARA_B1D:inst.inClave1[2]
+inClave0[2] => COMPARA_B1D:inst3.inClave1[2]
+inClave0[2] => COMPARA_B1D:inst4.inClave1[2]
+inClave0[2] => COMPARA_N:inst2.inClave0[2]
+inAdiv2[0] => COMPARA_B1D:inst3.inAdiv[0]
+inAdiv2[0] => COMPARA_N:inst2.inAdiv2[0]
+inAdiv2[1] => COMPARA_B1D:inst3.inAdiv[1]
+inAdiv2[1] => COMPARA_N:inst2.inAdiv2[1]
+inAdiv2[2] => COMPARA_B1D:inst3.inAdiv[2]
+inAdiv2[2] => COMPARA_N:inst2.inAdiv2[2]
+inAdiv3[0] => COMPARA_B1D:inst4.inAdiv[0]
+inAdiv3[0] => COMPARA_N:inst2.inAdiv3[0]
+inAdiv3[1] => COMPARA_B1D:inst4.inAdiv[1]
+inAdiv3[1] => COMPARA_N:inst2.inAdiv3[1]
+inAdiv3[2] => COMPARA_B1D:inst4.inAdiv[2]
+inAdiv3[2] => COMPARA_N:inst2.inAdiv3[2]
+outCN[0] <= COMPARA_N:inst2.outN[0]
+outCN[1] <= COMPARA_N:inst2.outN[1]
+outCN[2] <= COMPARA_N:inst2.outN[2]
+outCN[3] <= COMPARA_N:inst2.outN[3]
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_B1D:inst5
+outCB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+inAdiv[0] => inst6[0].IN0
+inAdiv[0] => inst8[0].IN0
+inAdiv[0] => inst[0].IN0
+inAdiv[1] => inst6[1].IN0
+inAdiv[1] => inst8[1].IN0
+inAdiv[1] => inst[1].IN0
+inAdiv[2] => inst6[2].IN0
+inAdiv[2] => inst8[2].IN0
+inAdiv[2] => inst[2].IN0
+inClave2[0] => inst6[0].IN1
+inClave2[1] => inst6[1].IN1
+inClave2[2] => inst6[2].IN1
+inClave3[0] => inst8[0].IN1
+inClave3[1] => inst8[1].IN1
+inClave3[2] => inst8[2].IN1
+inClave1[0] => inst[0].IN1
+inClave1[1] => inst[1].IN1
+inClave1[2] => inst[2].IN1
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_B1D:inst
+outCB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+inAdiv[0] => inst6[0].IN0
+inAdiv[0] => inst8[0].IN0
+inAdiv[0] => inst[0].IN0
+inAdiv[1] => inst6[1].IN0
+inAdiv[1] => inst8[1].IN0
+inAdiv[1] => inst[1].IN0
+inAdiv[2] => inst6[2].IN0
+inAdiv[2] => inst8[2].IN0
+inAdiv[2] => inst[2].IN0
+inClave2[0] => inst6[0].IN1
+inClave2[1] => inst6[1].IN1
+inClave2[2] => inst6[2].IN1
+inClave3[0] => inst8[0].IN1
+inClave3[1] => inst8[1].IN1
+inClave3[2] => inst8[2].IN1
+inClave1[0] => inst[0].IN1
+inClave1[1] => inst[1].IN1
+inClave1[2] => inst[2].IN1
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_B1D:inst3
+outCB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+inAdiv[0] => inst6[0].IN0
+inAdiv[0] => inst8[0].IN0
+inAdiv[0] => inst[0].IN0
+inAdiv[1] => inst6[1].IN0
+inAdiv[1] => inst8[1].IN0
+inAdiv[1] => inst[1].IN0
+inAdiv[2] => inst6[2].IN0
+inAdiv[2] => inst8[2].IN0
+inAdiv[2] => inst[2].IN0
+inClave2[0] => inst6[0].IN1
+inClave2[1] => inst6[1].IN1
+inClave2[2] => inst6[2].IN1
+inClave3[0] => inst8[0].IN1
+inClave3[1] => inst8[1].IN1
+inClave3[2] => inst8[2].IN1
+inClave1[0] => inst[0].IN1
+inClave1[1] => inst[1].IN1
+inClave1[2] => inst[2].IN1
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_B1D:inst4
+outCB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+inAdiv[0] => inst6[0].IN0
+inAdiv[0] => inst8[0].IN0
+inAdiv[0] => inst[0].IN0
+inAdiv[1] => inst6[1].IN0
+inAdiv[1] => inst8[1].IN0
+inAdiv[1] => inst[1].IN0
+inAdiv[2] => inst6[2].IN0
+inAdiv[2] => inst8[2].IN0
+inAdiv[2] => inst[2].IN0
+inClave2[0] => inst6[0].IN1
+inClave2[1] => inst6[1].IN1
+inClave2[2] => inst6[2].IN1
+inClave3[0] => inst8[0].IN1
+inClave3[1] => inst8[1].IN1
+inClave3[2] => inst8[2].IN1
+inClave1[0] => inst[0].IN1
+inClave1[1] => inst[1].IN1
+inClave1[2] => inst[2].IN1
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_N:inst2
+outN[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+outN[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+outN[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+outN[3] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+inClave1[0] => XNOR3bit:inst1.in0[0]
+inClave1[1] => XNOR3bit:inst1.in0[1]
+inClave1[2] => XNOR3bit:inst1.in0[2]
+inAdiv1[0] => XNOR3bit:inst1.in1[0]
+inAdiv1[1] => XNOR3bit:inst1.in1[1]
+inAdiv1[2] => XNOR3bit:inst1.in1[2]
+inClave2[0] => XNOR3bit:inst2.in0[0]
+inClave2[1] => XNOR3bit:inst2.in0[1]
+inClave2[2] => XNOR3bit:inst2.in0[2]
+inAdiv2[0] => XNOR3bit:inst2.in1[0]
+inAdiv2[1] => XNOR3bit:inst2.in1[1]
+inAdiv2[2] => XNOR3bit:inst2.in1[2]
+inClave3[0] => XNOR3bit:inst3.in0[0]
+inClave3[1] => XNOR3bit:inst3.in0[1]
+inClave3[2] => XNOR3bit:inst3.in0[2]
+inAdiv3[0] => XNOR3bit:inst3.in1[0]
+inAdiv3[1] => XNOR3bit:inst3.in1[1]
+inAdiv3[2] => XNOR3bit:inst3.in1[2]
+inClave0[0] => XNOR3bit:inst.in0[0]
+inClave0[1] => XNOR3bit:inst.in0[1]
+inClave0[2] => XNOR3bit:inst.in0[2]
+inAdiv0[0] => XNOR3bit:inst.in1[0]
+inAdiv0[1] => XNOR3bit:inst.in1[1]
+inAdiv0[2] => XNOR3bit:inst.in1[2]
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_N:inst2|XNOR3bit:inst1
+out[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
+in0[0] => inst5[0].IN0
+in0[0] => inst4[0].IN1
+in0[1] => inst5[1].IN0
+in0[1] => inst4[1].IN1
+in0[2] => inst5[2].IN0
+in0[2] => inst4[2].IN1
+in1[0] => inst5[0].IN1
+in1[0] => inst4[0].IN0
+in1[1] => inst5[1].IN1
+in1[1] => inst4[1].IN0
+in1[2] => inst5[2].IN1
+in1[2] => inst4[2].IN0
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_N:inst2|XNOR3bit:inst2
+out[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
+in0[0] => inst5[0].IN0
+in0[0] => inst4[0].IN1
+in0[1] => inst5[1].IN0
+in0[1] => inst4[1].IN1
+in0[2] => inst5[2].IN0
+in0[2] => inst4[2].IN1
+in1[0] => inst5[0].IN1
+in1[0] => inst4[0].IN0
+in1[1] => inst5[1].IN1
+in1[1] => inst4[1].IN0
+in1[2] => inst5[2].IN1
+in1[2] => inst4[2].IN0
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_N:inst2|XNOR3bit:inst3
+out[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
+in0[0] => inst5[0].IN0
+in0[0] => inst4[0].IN1
+in0[1] => inst5[1].IN0
+in0[1] => inst4[1].IN1
+in0[2] => inst5[2].IN0
+in0[2] => inst4[2].IN1
+in1[0] => inst5[0].IN1
+in1[0] => inst4[0].IN0
+in1[1] => inst5[1].IN1
+in1[1] => inst4[1].IN0
+in1[2] => inst5[2].IN1
+in1[2] => inst4[2].IN0
+
+
+|tarea1|COMPARA_BN:inst2|COMPARA_N:inst2|XNOR3bit:inst
+out[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
+in0[0] => inst5[0].IN0
+in0[0] => inst4[0].IN1
+in0[1] => inst5[1].IN0
+in0[1] => inst4[1].IN1
+in0[2] => inst5[2].IN0
+in0[2] => inst4[2].IN1
+in1[0] => inst5[0].IN1
+in1[0] => inst4[0].IN0
+in1[1] => inst5[1].IN1
+in1[1] => inst4[1].IN0
+in1[2] => inst5[2].IN1
+in1[2] => inst4[2].IN0
+
+
+|tarea1|SALIDA_LED:inst4
+LED[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= and12.DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= and11.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => and7.IN0
+SW[0] => and9.IN0
+SW[0] => and8.IN0
+SW[0] => and11.IN0
+SW[0] => inst3.IN2
+SW[0] => inst2.IN2
+SW[0] => inst1.IN2
+SW[0] => or1.IN0
+SW[1] => and7.IN1
+SW[1] => and10.IN0
+SW[1] => and8.IN1
+SW[1] => and11.IN1
+SW[1] => inst3.IN0
+SW[1] => inst2.IN0
+SW[1] => inst.IN2
+SW[1] => or1.IN3
+SW[2] => and7.IN2
+SW[2] => and9.IN1
+SW[2] => and10.IN1
+SW[2] => and11.IN2
+SW[2] => inst3.IN1
+SW[2] => inst1.IN0
+SW[2] => inst.IN0
+SW[2] => or1.IN1
+SW[3] => and9.IN2
+SW[3] => and10.IN2
+SW[3] => and8.IN2
+SW[3] => and11.IN3
+SW[3] => inst2.IN1
+SW[3] => inst1.IN1
+SW[3] => inst.IN1
+SW[3] => or1.IN2
+
+
