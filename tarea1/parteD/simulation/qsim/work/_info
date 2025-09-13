@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Guille\Documents\FING\dislog\tarea1\parteD\simulation\qsim
+vTAREA1_D
+Z1 INnH;=XS7l>9nOkz>S3hLf1
+Z2 VM<Y`_MY1lA8OA91dPZJ2<0
+Z3 dC:\Users\Guille\Documents\FING\dislog\tarea1\parteD\simulation\qsim
+Z4 w1757802832
+Z5 8TAREA1_D.vo
+Z6 FTAREA1_D.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@t@a@r@e@a1_@d
+!i10b 1
+Z10 !s100 KEF@KG7BG??Rf96Z8Pk9G2
+!s85 0
+Z11 !s108 1757802833.504000
+Z12 !s107 TAREA1_D.vo|
+Z13 !s90 -work|work|TAREA1_D.vo|
+!s101 -O0
+vTAREA1_D_vlg_check_tst
+!i10b 1
+!s100 W6ImlPk8^@L2Ge1`]jOo=3
+I2XlUAWJOlgSj^j`ROS_6n0
+Vi69B7f9P8lP[1l:on[SaW3
+R3
+R4
+Z14 8TAREA1_D.vwf.vt
+Z15 FTAREA1_D.vwf.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1757802833.590000
+Z17 !s107 TAREA1_D.vwf.vt|
+Z18 !s90 -work|work|TAREA1_D.vwf.vt|
+!s101 -O0
+R8
+n@t@a@r@e@a1_@d_vlg_check_tst
+vTAREA1_D_vlg_sample_tst
+!i10b 1
+!s100 ZYZMzm]YQ`1MD?UnXGIKa1
+I^B5ebIlMkmEf45UVze29j3
+V37m3P`65koL>EOieOVY3j3
+R3
+R4
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@t@a@r@e@a1_@d_vlg_sample_tst
+vTAREA1_D_vlg_vec_tst
+!i10b 1
+!s100 dzMoc1o4ZKSgA=TSzA6nP3
+I3>6mnJJBT1ffCNMB=H6eh1
+Va`S@cA6gbz7:D3]V@H4`?2
+R3
+R4
+R14
+R15
+L0 503
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@t@a@r@e@a1_@d_vlg_vec_tst

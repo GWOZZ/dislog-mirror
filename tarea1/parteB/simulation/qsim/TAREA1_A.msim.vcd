@@ -1,0 +1,188 @@
+$comment
+	File created using the following command:
+		vcd file TAREA1_A.msim.vcd -direction
+$end
+$date
+	Sat Sep 13 17:56:30 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module TAREA1_A_vlg_vec_tst $end
+$var reg 4 ! SW [3:0] $end
+$var wire 1 " LED [3] $end
+$var wire 1 # LED [2] $end
+$var wire 1 $ LED [1] $end
+$var wire 1 % LED [0] $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - LED[3]~output_o $end
+$var wire 1 . LED[2]~output_o $end
+$var wire 1 / LED[1]~output_o $end
+$var wire 1 0 LED[0]~output_o $end
+$var wire 1 1 SW[3]~input_o $end
+$var wire 1 2 SW[0]~input_o $end
+$var wire 1 3 SW[2]~input_o $end
+$var wire 1 4 SW[1]~input_o $end
+$var wire 1 5 inst|and11~combout $end
+$var wire 1 6 inst|or3~0_combout $end
+$var wire 1 7 inst|and12~0_combout $end
+$var wire 1 8 inst|or1~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0%
+0$
+0#
+0"
+x&
+0'
+1(
+x)
+1*
+1+
+1,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+$end
+#10000
+b1000 !
+11
+0&
+18
+10
+1%
+#20000
+b1100 !
+b100 !
+13
+01
+1&
+#30000
+b1100 !
+11
+0&
+17
+1/
+1$
+#40000
+b1110 !
+b1010 !
+b10 !
+14
+03
+01
+1&
+07
+0/
+0$
+#50000
+b1010 !
+11
+0&
+17
+1/
+1$
+#60000
+b1110 !
+b110 !
+13
+01
+1&
+#70000
+b1110 !
+11
+0&
+16
+1.
+1#
+#80000
+b1111 !
+b1101 !
+b1001 !
+b1 !
+12
+04
+03
+01
+1&
+07
+06
+0/
+0.
+0$
+0#
+#90000
+b1001 !
+11
+0&
+17
+1/
+1$
+#100000
+b1101 !
+b101 !
+13
+01
+1&
+#110000
+b1101 !
+11
+0&
+16
+1.
+1#
+#120000
+b1111 !
+b1011 !
+b11 !
+14
+03
+01
+1&
+06
+0.
+0#
+#130000
+b1011 !
+11
+0&
+16
+1.
+1#
+#140000
+b1111 !
+b111 !
+13
+01
+1&
+#150000
+b1111 !
+11
+0&
+15
+1-
+1"
+#160000
