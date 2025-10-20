@@ -1,0 +1,64 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 56 56 192 168)
+	(text "CTRL_Cont6" (rect 8 0 78 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 96 25 108)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "btn" (rect 0 8 17 22)(font "Arial" (font_size 8)))
+		(text "btn" (rect 21 35 38 49)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "reset" (rect 0 8 29 22)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 51 50 65)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "clk" (rect 0 8 15 22)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 75 36 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 136 40)
+		(output)
+		(text "Q[2..0]" (rect 16 8 53 22)(font "Arial" (font_size 8)))
+		(text "Q[2..0]" (rect 78 35 115 49)(font "Arial" (font_size 8)))
+		(line (pt 136 40)(pt 120 40)(line_width 3))
+	)
+	(port
+		(pt 136 56)
+		(output)
+		(text "pulso" (rect 16 8 46 22)(font "Arial" (font_size 8)))
+		(text "pulso" (rect 85 51 115 65)(font "Arial" (font_size 8)))
+		(line (pt 136 56)(pt 120 56))
+	)
+	(drawing
+		(rectangle (rect 16 24 120 96))
+	)
+)

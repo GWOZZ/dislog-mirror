@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Guille/Documents/FING/dislog/tarea2/P2_MM_2025/archivos/div_2.bdf
+source_file = 1, C:/Users/Guille/Documents/FING/dislog/tarea2/P2_MM_2025/archivos/Waveform.vwf
+source_file = 1, C:/Users/Guille/Documents/FING/dislog/tarea2/P2_MM_2025/archivos/db/div_2.cbx.xml
+design_name = div_2
+instance = comp, \out~output , out~output, div_2, 1
+instance = comp, \clk1~output , clk1~output, div_2, 1
+instance = comp, \in~input , in~input, div_2, 1
+instance = comp, \clk~input , clk~input, div_2, 1
+instance = comp, \inst~0 , inst~0, div_2, 1

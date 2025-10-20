@@ -1,0 +1,74 @@
+|TAREA2_C
+LED <= CTRL_Cont6:inst1.pulso
+SW[9] => CTRL_Cont6:inst1.btn
+reset => CTRL_Cont6:inst1.reset
+BTN_1 => nandltch:inst.RN
+BTN_2 => nandltch:inst.SN
+Disp[0] <= 7_SEG:inst2.Disp[0]
+Disp[1] <= 7_SEG:inst2.Disp[1]
+Disp[2] <= 7_SEG:inst2.Disp[2]
+Disp[3] <= 7_SEG:inst2.Disp[3]
+Disp[4] <= 7_SEG:inst2.Disp[4]
+Disp[5] <= 7_SEG:inst2.Disp[5]
+Disp[6] <= 7_SEG:inst2.Disp[6]
+
+
+|TAREA2_C|CTRL_Cont6:inst1
+pulso <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst.ACLR
+reset => inst1.ACLR
+reset => inst2.ACLR
+clk => inst.CLK
+clk => inst1.CLK
+clk => inst2.CLK
+btn => inst19.IN2
+btn => inst18.IN1
+btn => inst21.IN2
+btn => inst20.IN3
+btn => inst23.IN2
+btn => inst22.IN2
+btn => inst25.IN2
+btn => inst24.IN3
+
+
+|TAREA2_C|nandltch:inst
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+SN => 7.IN0
+RN => 4.IN1
+QN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TAREA2_C|7_SEG:inst2
+Disp[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Disp[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Disp[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Disp[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Disp[4] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Disp[5] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Disp[6] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => 7449:inst.A
+SW[1] => 7449:inst.B
+SW[2] => 7449:inst.C
+
+
+|TAREA2_C|7_SEG:inst2|7449:inst
+OG <= 33.DB_MAX_OUTPUT_PORT_TYPE
+C => 9.IN0
+BIN => 13.IN1
+BIN => 12.IN1
+BIN => 11.IN1
+BIN => 14.IN1
+B => 8.IN0
+A => 7.IN0
+D => 10.IN0
+OF <= 37.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 32.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 36.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 31.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 35.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+

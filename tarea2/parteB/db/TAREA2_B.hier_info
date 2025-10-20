@@ -1,0 +1,75 @@
+|TAREA2_B
+Disp[0] <= 7_SEG:inst2.Disp[0]
+Disp[1] <= 7_SEG:inst2.Disp[1]
+Disp[2] <= 7_SEG:inst2.Disp[2]
+Disp[3] <= 7_SEG:inst2.Disp[3]
+Disp[4] <= 7_SEG:inst2.Disp[4]
+Disp[5] <= 7_SEG:inst2.Disp[5]
+Disp[6] <= 7_SEG:inst2.Disp[6]
+dec => CONTADOR_6:inst1.dec
+inc => CONTADOR_6:inst1.inc
+boton1 => nandltch:inst.RN
+boton2 => nandltch:inst.SN
+reset => CONTADOR_6:inst1.reset
+
+
+|TAREA2_B|7_SEG:inst2
+Disp[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Disp[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Disp[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Disp[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Disp[4] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Disp[5] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Disp[6] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => 7449:inst.A
+SW[1] => 7449:inst.B
+SW[2] => 7449:inst.C
+
+
+|TAREA2_B|7_SEG:inst2|7449:inst
+OG <= 33.DB_MAX_OUTPUT_PORT_TYPE
+C => 9.IN0
+BIN => 13.IN1
+BIN => 12.IN1
+BIN => 11.IN1
+BIN => 14.IN1
+B => 8.IN0
+A => 7.IN0
+D => 10.IN0
+OF <= 37.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 32.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 36.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 31.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 35.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TAREA2_B|CONTADOR_6:inst1
+Q[0] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst21.ACLR
+reset => inst22.ACLR
+reset => inst23.ACLR
+clk => inst21.CLK
+clk => inst22.CLK
+clk => inst23.CLK
+dec => inst.IN0
+dec => inst7.IN0
+dec => inst8.IN0
+dec => inst11.IN0
+dec => inst14.IN0
+dec => inst16.IN0
+inc => inst1.IN0
+inc => inst6.IN0
+inc => inst10.IN0
+inc => inst15.IN0
+
+
+|TAREA2_B|nandltch:inst
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+SN => 7.IN0
+RN => 4.IN1
+QN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+
+

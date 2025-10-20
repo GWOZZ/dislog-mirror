@@ -1,0 +1,9 @@
+|div_2
+out <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+in => inst1.IN0
+in => inst.IN0
+clk => inst.CLK
+clk => clk1.DATAIN
+clk1 <= clk.DB_MAX_OUTPUT_PORT_TYPE
+
+
